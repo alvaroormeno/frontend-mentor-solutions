@@ -1,16 +1,20 @@
 {
+  "homepage": "https://alvaroormeno.github.io/frontend-mentor-solutions/",
   "name": "manage-landing-page",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "tailwindcss -i ./input.css -o ./css/main.css",
-    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
+    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch",
+    "predeploy": "npm run build",
+"deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "tailwindcss": "^3.1.5"
   }
 }
